@@ -1,11 +1,12 @@
 import './App.css';
-import { Button } from './components/buttons.jsx';
-
+import { Button } from './components/buttons/buttons.jsx';
+import { Screen } from './components/screen/screen';
 function App() {
   return (
     <div className="App">
       <header className="main-header">calculator</header>
       <div className="container-calculator">
+        <Screen />
         <div className="row">
           <Button>1</Button>
           <Button>2</Button>
