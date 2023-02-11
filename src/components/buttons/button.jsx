@@ -6,12 +6,13 @@ export function Button(props) {
     return isNaN(value) && value !== '.' && value !== '=';
   };
   return (
-    <div
+    <button
       className={`button-container ${
         isOperator(props.children) ? 'operator' : ''
       }`.trimEnd()}
+      onClick={() => props.handleClick(props.children)}
     >
       {props.children}
-    </div>
+    </button>
   );
 }
