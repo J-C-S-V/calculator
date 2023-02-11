@@ -1,6 +1,7 @@
 import './App.css';
-import { Button } from './components/buttons/buttons.jsx';
+import { Button } from './components/buttons/button.jsx';
 import { Screen } from './components/screen/screen';
+import { ButtonClear } from './components/buttons/button_clear';
 function App() {
   return (
     <div className="App">
@@ -31,7 +32,9 @@ function App() {
           <Button>.</Button>
           <Button>/</Button>
         </div>
-        <div className="row"></div>
+        <div className="row">
+          <ButtonClear>Clear</ButtonClear>
+        </div>
       </div>
     </div>
   );

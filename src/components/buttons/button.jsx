@@ -1,5 +1,5 @@
 import React from 'react';
-import './buttons.css';
+import './button.css';
 
 export function Button(props) {
   const isOperator = (value) => {
